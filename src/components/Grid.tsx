@@ -9,20 +9,20 @@ const WrapperDiv = styled.div`
   grid-template-columns: repeat(1, [col] 1fr);
   grid-gap: 16px;
 
-  @media only screen and (min-width : 768px) {
+  @media only screen and (min-width: 768px) {
     grid-template-columns: repeat(2, [col] 1fr);
     grid-gap: 32px;
   }
 
-  @media only screen and (min-width : 1024px) {
+  @media only screen and (min-width: 1024px) {
     grid-template-columns: repeat(4, [col] 1fr);
   }
 
-  @media only screen and (min-width : 1224px) {
+  @media only screen and (min-width: 1224px) {
     grid-template-columns: repeat(6, [col] 1fr);
   }
 
-  @media only screen and (min-width : 1824px) {
+  @media only screen and (min-width: 1824px) {
     grid-template-columns: repeat(10, [col] 1fr);
   }
   `

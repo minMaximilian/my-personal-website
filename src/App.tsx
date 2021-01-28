@@ -4,17 +4,16 @@ import Grid from './components/Grid';
 import GridItem from './components/GridItem';
 import Card from './components/Card';
 import { ThemeProvider } from 'styled-components';
-
-const theme = null
+import lightTheme from './styles/css/themes/Themes';
 
 const App: React.FC = () => {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={lightTheme}>
       <Container>
         <div> Test </div>
         <div> Line 2 </div>
         <Grid>
-          <GridItem span='2'>
+          <GridItem className='m'>
             Test
           </GridItem>
           <GridItem>
@@ -23,7 +22,7 @@ const App: React.FC = () => {
           <GridItem>
             Test3
           </GridItem>
-          <GridItem>
+          <GridItem className='xl'>
             <Card>
               Text
             </Card>
