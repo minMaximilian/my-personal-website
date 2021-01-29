@@ -1,24 +1,27 @@
-FROM node:15.6.0-alpine
+FROM node:12 as dev
 
 WORKDIR /app
 
-ENV PATH /app/node_modules/.bin:$PATH
+COPY . .
 
-COPY package.json ./
-COPY package-lock.json ./
+RUN yarn
 
-RUN npm ci --silent
-RUN npm install react-scripts@4.0.1 -g --silent
+FROM node:12 as build_prod
 
-COPY . ./
+WORKDIR /app
 
-CMD npm run build 
+RUN apt update && apt-get -y install gconf-service libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxss1 libxtst6 libappindicator1 libnss3 libasound2 libatk1.0-0 libc6 ca-certificates fonts-liberation lsb-release xdg-utils wget
 
-FROM nginx:stable-alpine
+COPY --from=dev /app .
 
-COPY --from=build /app/build /usr/share/nginx/html
-COPY cfg/nginx.conf /etc/nginx/conf.d/default.conf
+RUN yarn build
 
-EXPOSE 80
+FROM nginx:latest as prod
 
-CMD ["nginx", "-g", "daemon off;"]
+RUN ln -s /app /usr/share/nginx/html
+
+WORKDIR /usr/share/nginx/html
+
+COPY --from=build_prod /app/dist .
+
+COPY default.conf /etc/nginx/conf.d/default.conf

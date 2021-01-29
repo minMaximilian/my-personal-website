@@ -5,11 +5,15 @@ import GridItem from './components/GridItem';
 import Card from './components/Card';
 import { ThemeProvider } from 'styled-components';
 import lightTheme from './styles/css/themes/Themes';
+import Navbar from './components/nav/Navbar';
 
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={lightTheme}>
       <Container>
+        <Navbar>
+          Test
+        </Navbar>
         <div> Test </div>
         <div> Line 2 </div>
         <Grid>
