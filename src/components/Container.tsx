@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const WrapperDiv = styled.div`
+  color: ${Props => Props.theme.textColour};
   display: flex;
   margin: 0 64px 0 64px;
   flex-direction: column;

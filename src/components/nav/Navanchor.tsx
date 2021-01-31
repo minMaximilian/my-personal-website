@@ -10,6 +10,7 @@ const WrapperDiv = styled.a`
     border-bottom: solid ${Props => Props.theme.secondaryMono} 1px;
   }
 
+  color: ${Props => Props.theme.textColour};
   font-size: 1.5rem;
   display: flex;
   padding: 1rem 1.5rem .75rem 1.5rem;

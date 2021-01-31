@@ -7,7 +7,7 @@ import { ThemeProvider } from 'styled-components';
 import lightTheme from './styles/css/themes/Themes';
 import Navbar from './components/nav/Navbar';
 import Navanchor from './components/nav/Navanchor';
-
+import Jumbotron from './components/Jumbotron';
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={lightTheme}>
@@ -23,6 +23,9 @@ const App: React.FC = () => {
           </Navanchor>
       </Navbar>
       <Container>
+        <Jumbotron>
+          Jumbotron Dummy Text
+        </Jumbotron>
         <Grid>
           <GridItem className='m'>
             Test

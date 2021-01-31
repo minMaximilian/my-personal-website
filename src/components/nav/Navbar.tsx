@@ -9,6 +9,7 @@ interface Props {
 }
 
 const WrapperDiv = styled.div<Props>`
+  color: ${Props => Props.theme.textColour};
   border-bottom: 1px ${Props => Props.theme.secondaryMono} solid;
   display: grid;
   grid-template-rows: 4rem;

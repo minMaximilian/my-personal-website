@@ -5,6 +5,7 @@ const WrapperDiv = styled.div`
   display: grid;
   grid-template-rows: auto;
   grid-auto-flow: row;
+  color: ${Props => Props.theme.textColour};
 
   grid-template-columns: repeat(1, [col] 1fr);
   grid-gap: 16px;

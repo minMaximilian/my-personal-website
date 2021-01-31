@@ -8,6 +8,7 @@ interface Props {
 const WrapperDiv = styled.div<Props>`
   display: grid;
   grid-column: span 1;
+  color: ${Props => Props.theme.textColour};
 
   @media only screen and (min-width: 768px) {
     grid-column: span ${Props => (Props.className==='xs' && 1) || (Props.className && 2) || 1};
