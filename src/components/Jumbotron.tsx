@@ -11,7 +11,7 @@ const WrapperDiv = styled.div`
   font-size: 2.5rem;
   color: ${Props => Props.theme.secondaryMono};
   justify-content: center;
-  text-align: center;
+  align-items: center;
 
 `
 
