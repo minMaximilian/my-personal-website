@@ -6,8 +6,11 @@ interface Props {
 }
 
 const WrapperDiv = styled.img`
-  display: grid;
-  grid-column-start: 1;
+  display: none;
+  @media only screen and (min-width: 1024px) {
+    display: grid;
+  }
+  grid-column-start: 2;
   width: 4rem;
   height: 4rem;
   `

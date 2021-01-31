@@ -6,16 +6,17 @@ import Card from './components/Card';
 import { ThemeProvider } from 'styled-components';
 import lightTheme from './styles/css/themes/Themes';
 import Navbar from './components/nav/Navbar';
+import Navanchor from './components/nav/Navanchor';
 
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={lightTheme}>
+      <Navbar logo='favicon.ico'>
+          <Navanchor href="/">
+            Home
+          </Navanchor>
+      </Navbar>
       <Container>
-        <Navbar>
-          Test
-        </Navbar>
-        <div> Test </div>
-        <div> Line 2 </div>
         <Grid>
           <GridItem className='m'>
             Test
