@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const WrapperDiv = styled.div`
   display: flex;
   padding: 1rem;
-  background-color: ${props => props.theme.primaryColour};
+  background-color: ${Props => Props.theme.secondaryMono};
   border-radius: 1rem;
   `
 

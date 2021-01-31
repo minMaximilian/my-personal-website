@@ -9,10 +9,11 @@ interface Props {
 }
 
 const WrapperDiv = styled.div<Props>`
-  border-bottom: 1px ${Props => Props.theme.primaryColour} solid;
+  border-bottom: 1px ${Props => Props.theme.secondaryMono} solid;
   display: grid;
   grid-template-rows: 4rem;
   grid-auto-flow: row;
+  background-color: ${Props => Props.theme.primaryColour};
 
   ${Props => Props.logo ? 'grid-template-columns: 4rem 1fr;' : 'grid-template-columns: 0rem 1fr;'}
   height: 4rem;

@@ -7,7 +7,7 @@ interface Props {
 
 const WrapperDiv = styled.a`
   @media only screen and (max-width: 1023px) {
-    border-bottom: solid ${Props => Props.theme.primaryColour} 1px;
+    border-bottom: solid ${Props => Props.theme.secondaryMono} 1px;
   }
 
   font-size: 1.5rem;
@@ -19,7 +19,7 @@ const WrapperDiv = styled.a`
 
   :hover {
     color:#000000; 
-    background-color: ${Props => Props.theme.primaryColour};
+    background-color: ${Props => Props.theme.secondaryMono};
     text-decoration:none; 
     cursor: pointer;  
   }

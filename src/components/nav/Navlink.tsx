@@ -11,8 +11,8 @@ const WrapperDiv = styled.div<Props>`
       display: flex;
       position: absolute;
       background-color: #fff;
-      border-right: 1px ${Props.theme.primaryColour} solid;
-      border-top: 1px ${Props.theme.primaryColour} solid;
+      border-right: 1px ${Props.theme.secondaryMono} solid;
+      border-top: 1px ${Props.theme.secondaryMono} solid;
       top: 4rem;
       height: calc(100vh - 4rem);
       flex-direction: column;
