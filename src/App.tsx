@@ -15,6 +15,12 @@ const App: React.FC = () => {
           <Navanchor href="/">
             Home
           </Navanchor>
+          <Navanchor href="/">
+            Tab2
+          </Navanchor>
+          <Navanchor href="/">
+            Tab3
+          </Navanchor>
       </Navbar>
       <Container>
         <Grid>

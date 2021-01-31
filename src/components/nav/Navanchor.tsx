@@ -6,11 +6,16 @@ interface Props {
 }
 
 const WrapperDiv = styled.a`
+  @media only screen and (max-width: 1023px) {
+    border-bottom: solid ${Props => Props.theme.primaryColour} 1px;
+  }
+
   font-size: 1.5rem;
   display: flex;
   padding: 1rem 1.5rem .75rem 1.5rem;
   color: #000000;
   text-decoration: none;
+  justify-content: center;
 
   :hover {
     color:#000000; 

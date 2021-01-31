@@ -31,9 +31,12 @@ const Navbar: React.FC<Props> = ({children, logo}) => {
   return (
     <WrapperDiv>
       {logo ? <Navlogo logo={logo}></Navlogo> : ''}
+      {children ?
       <div onClick={() => setNav(!nav)}>
         <Hamburger />
       </div>
+      : ''}
+      
       <Navlink visible={nav}>
         {children}
       </Navlink>
