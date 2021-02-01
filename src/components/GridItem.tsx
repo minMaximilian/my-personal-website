@@ -25,7 +25,7 @@ const WrapperDiv = styled.div<Props>`
   @media only screen and (min-width: 1824px) {
     grid-column: span ${Props => (Props.className==='xs' && 2) || (Props.className==='s' && 2) || (Props.className==='m' && 6) || (Props.className==='l' && 8) || (Props.className==='xl' && 10) || 2};
   }
-  `
+`
 
 const GridItem: React.FC<Props> = ({children, className}) => {
   return (

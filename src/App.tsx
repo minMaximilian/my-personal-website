@@ -22,10 +22,10 @@ const App: React.FC = () => {
             Tab3
           </Navanchor>
       </Navbar>
-      <Container>
-        <Jumbotron>
+      <Jumbotron>
           Jumbotron Dummy Text
-        </Jumbotron>
+      </Jumbotron>
+      <Container>
         <Grid>
           <GridItem className='m'>
             Test

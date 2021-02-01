@@ -7,12 +7,13 @@ const WrapperDiv = styled.div`
   background-color: ${Props => Props.theme.tertiaryMono};
   border-left: solid 1px ${Props => Props.theme.secondaryMono};
   border-right: solid 1px ${Props => Props.theme.secondaryMono};
-  margin: 0 2rem 0 2rem;
   font-size: 2.5rem;
   color: ${Props => Props.theme.secondaryMono};
   justify-content: center;
   align-items: center;
-
+  @media only screen and (min-width: 1024px) {
+    margin: 0 4rem 0 4rem;
+  }
 `
 
 const Jumbotron: React.FC = ({children}) => {
