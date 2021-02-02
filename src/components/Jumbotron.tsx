@@ -11,8 +11,9 @@ const WrapperDiv = styled.div`
   color: ${Props => Props.theme.secondaryMono};
   justify-content: center;
   align-items: center;
+  margin-bottom: 1.5rem;
   @media only screen and (min-width: 1024px) {
-    margin: 0 4rem 0 4rem;
+    margin: 0 4rem 1.5rem 4rem;
   }
 `
 
