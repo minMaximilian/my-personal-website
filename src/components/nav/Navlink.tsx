@@ -10,9 +10,9 @@ const WrapperDiv = styled.div<Props>`
       ${Props => Props.visible ? `
       display: flex;
       position: absolute;
-      background-color: #fff;
-      border-right: 1px ${Props.theme.secondaryMono} solid;
-      border-top: 1px ${Props.theme.secondaryMono} solid;
+      background-color: ${Props.theme.tertiaryColour};
+      border-right: 1px ${Props.theme.secondaryColour} solid;
+      border-top: 1px ${Props.theme.secondaryColour} solid;
       top: 4rem;
       height: calc(100vh - 4rem);
       flex-direction: column;

@@ -7,21 +7,20 @@ interface Props {
 
 const WrapperDiv = styled.a`
   @media only screen and (max-width: 1023px) {
-    border-bottom: solid ${Props => Props.theme.secondaryMono} 1px;
+    border-bottom: solid ${Props => Props.theme.secondaryColour} 1px;
   }
 
   color: ${Props => Props.theme.textColour};
   font-size: 1.5rem;
   display: flex;
   padding: 1rem 1.5rem .75rem 1.5rem;
-  color: #000000;
   text-decoration: none;
   justify-content: center;
 
   :hover {
-    color:#000000; 
-    background-color: ${Props => Props.theme.secondaryMono};
-    text-decoration:none; 
+    color: ${Props => Props.theme.textColour}; 
+    background-color: ${Props => Props.theme.secondaryColour};
+    text-decoration: none; 
     cursor: pointer;  
   }
 `

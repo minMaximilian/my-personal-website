@@ -10,7 +10,7 @@ interface Props {
 
 const WrapperDiv = styled.div<Props>`
   color: ${Props => Props.theme.textColour};
-  border-bottom: 1px ${Props => Props.theme.secondaryMono} solid;
+  border-bottom: 1px ${Props => Props.theme.secondaryColour} solid;
   display: grid;
   grid-template-rows: 4rem;
   grid-auto-flow: row;
@@ -38,7 +38,7 @@ const Navbar: React.FC<Props> = ({children, logo}) => {
         <Hamburger />
       </div>
       : ''}
-      
+
       <Navlink visible={nav}>
         {children}
       </Navlink>

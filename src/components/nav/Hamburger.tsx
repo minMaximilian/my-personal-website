@@ -11,7 +11,7 @@ const WrapperDiv = styled.div`
   justify-content: center;
 
   div {
-    background-color: ${Props => Props.theme.primaryMono} ;
+    background-color: ${Props => Props.theme.tertiaryColour} ;
     margin: .25rem auto .25rem auto;
     height: .25rem;
     width: 2rem;

@@ -5,10 +5,10 @@ const WrapperDiv = styled.div`
   display: flex;
   min-height: 30rem;
   background-color: ${Props => Props.theme.tertiaryMono};
-  border-left: solid 1px ${Props => Props.theme.secondaryMono};
-  border-right: solid 1px ${Props => Props.theme.secondaryMono};
+  border-left: solid 1px ${Props => Props.theme.tertiaryMono};
+  border-right: solid 1px ${Props => Props.theme.tertiaryMono};
   font-size: 2.5rem;
-  color: ${Props => Props.theme.secondaryMono};
+  color: ${Props => Props.theme.textColour};
   justify-content: center;
   align-items: center;
   margin-bottom: 1.5rem;
