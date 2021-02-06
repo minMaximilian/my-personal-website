@@ -13,7 +13,7 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={darkMode}>
       <GlobalStyles />
-        <Navbar logo='favicon.ico'>
+        <Navbar>
             <Navanchor href="https://github.com/minMaximilian">
               Github
             </Navanchor>
@@ -25,7 +25,7 @@ const App: React.FC = () => {
             </Navanchor>
         </Navbar>
         <Jumbotron>
-            Hi I am Max, Welcome to my website
+            Hi I am Max, I am a second year Computer Science Student at University College Cork.
         </Jumbotron>
         <Container>
           <Grid>
@@ -35,7 +35,6 @@ const App: React.FC = () => {
               </ShowcaseCard>
             </GridItem>
           </Grid>
-          Hi I am Max, welcome to my page I've listed a bunch of projects I've worked that I think you should go and check out. 
         </Container>
     </ThemeProvider>
   );
