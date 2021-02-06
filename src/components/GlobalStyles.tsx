@@ -10,4 +10,11 @@ export const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     transition: all 0.50s linear;
   }
+  #root {
+    padding-top: 4rem;
+
+    @media only screen and (min-width: 1024px) {
+      padding-top: 0rem;
+    }
+  }
 `

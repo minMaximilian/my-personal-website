@@ -15,10 +15,14 @@ const WrapperDiv = styled.div<Props>`
   grid-template-rows: 4rem;
   grid-auto-flow: row;
   background-color: ${Props => Props.theme.primaryColour};
+  position: fixed; 
+  top: 0;
+  width: 100%;
 
   ${Props => Props.logo ? 'grid-template-columns: 4rem 1fr;' : 'grid-template-columns: 0rem 1fr;'}
   height: 4rem;
   @media only screen and (min-width: 1024px) {
+    position: relative;
     ${Props => Props.logo ? 'grid-template-columns: 10rem 4rem 1fr 0fr 10rem;' : 'grid-template-columns: 10rem 0rem 1fr 0fr 10rem;'}
   }
 

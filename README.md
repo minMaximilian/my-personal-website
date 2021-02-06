@@ -14,3 +14,7 @@ Then run these following commands,
 ## How to run the docker image
 
 `docker run -p 80:80 my-personal-website`
+
+You can access it in your browser from
+
+`localhost:80` 
