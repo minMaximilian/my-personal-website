@@ -30,8 +30,13 @@ const App: React.FC = () => {
         <Container>
           <Grid>
             <GridItem className='xs'>
-              <ShowcaseCard href="https://www.github.com" imgSrc='test.png' title='The website itself'>
+              <ShowcaseCard href="https://github.com/minMaximilian/my-personal-website" imgSrc='test.png' title='The website itself'>
                 This website is developed with typescript and react, I've tried to use as little dependencies as possible to limit myself and explore my creativity. This website instance is hosted on a docker instance and the image can be found at dockerhub as minMaximilian/my-personal-website.
+              </ShowcaseCard>
+            </GridItem>
+            <GridItem className='xs'>
+              <ShowcaseCard href="https://github.com/minMaximilian/community-discord-bot" imgSrc='test.png' title='Community Discord Bot'>
+                This is my discord bot, it is made in python for quick development. It is planned to interact with an API to parse game saves, display information, do community tracking, moderation, basic automation such as role assignment and there is more to be planned and added as issues arise.
               </ShowcaseCard>
             </GridItem>
           </Grid>
